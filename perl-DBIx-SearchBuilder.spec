@@ -1,13 +1,13 @@
 %define module	DBIx-SearchBuilder
 %define name	perl-%{module}
-%define version 1.43
-%define release %mkrel 1
+%define version 1.48
+%define rel     1
 
 %define _requires_exceptions perl(DBD::Oracle)
 
 Name:		%{name}
 Version:	%{version}
-Release:	%{release}
+Release:	%mkrel %{rel}
 Summary:	Database-independent schema objects
 License:	GPL or Artistic
 Group:		Development/Perl
