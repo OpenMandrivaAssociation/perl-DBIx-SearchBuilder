@@ -12,8 +12,8 @@ Summary:	Database-independent schema objects
 License:	GPL or Artistic
 Group:		Development/Perl
 Summary:	Encapsulate SQL queries and rows in simple perl object
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/DBIx/%{module}-%{version}.tar.bz2
 Url:		http://search.cpan.org/dist/%{module}
+Source:     http://www.cpan.org/modules/by-module/DBIx/%{module}-%{version}.tar.gz
 %if %{mdkversion} < 1010
 BuildRequires:	perl-devel
 %endif
@@ -48,7 +48,7 @@ every other method here, as long as you think you know what you are doing.
 find -name \*.pm | xargs chmod 644
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor
+%{__perl} Makefile.PL INSTALLDIRS=vendor --skipdeps
 %make
 
 %check
