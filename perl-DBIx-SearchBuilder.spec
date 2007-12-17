@@ -26,7 +26,6 @@ BuildRequires:	perl(Class::Accessor)
 BuildRequires:	perl(Clone)
 BuildRequires:	perl(DBIx::DBSchema)
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 This module provides an object-oriented mechanism for retrieving and updating
