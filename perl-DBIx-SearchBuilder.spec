@@ -1,6 +1,6 @@
 %define module	DBIx-SearchBuilder
 %define name	perl-%{module}
-%define version 1.51
+%define version 1.53
 %define rel     1
 
 %define _requires_exceptions perl(DBD::Oracle)
