@@ -1,6 +1,6 @@
 %define module	DBIx-SearchBuilder
 %define name	perl-%{module}
-%define version 1.54
+%define version 1.55
 %define rel     1
 
 %define _requires_exceptions perl(DBD::Oracle)
@@ -14,9 +14,6 @@ Group:		Development/Perl
 Summary:	Encapsulate SQL queries and rows in simple perl object
 Url:		http://search.cpan.org/dist/%{module}
 Source:     http://www.cpan.org/modules/by-module/DBIx/%{module}-%{version}.tar.gz
-%if %{mdkversion} < 1010
-BuildRequires:	perl-devel
-%endif
 BuildRequires:	perl(Want)
 BuildRequires:	perl(DBI)
 BuildRequires:	perl(DBD::SQLite)
