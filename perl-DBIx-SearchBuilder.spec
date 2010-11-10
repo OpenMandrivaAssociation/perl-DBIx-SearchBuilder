@@ -1,5 +1,5 @@
 %define upstream_name	 DBIx-SearchBuilder
-%define upstream_version 1.56
+%define upstream_version 1.58
 
 %define _requires_exceptions perl(DBD::Oracle)
 
