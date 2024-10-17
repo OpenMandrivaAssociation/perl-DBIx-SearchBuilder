@@ -16,7 +16,7 @@ Summary:	Database-independent schema objects
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Summary:	Encapsulate SQL queries and rows in simple perl object
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/DBIx/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
