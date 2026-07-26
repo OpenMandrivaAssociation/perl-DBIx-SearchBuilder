@@ -1,6 +1,4 @@
 %define upstream_name	 DBIx-SearchBuilder
-%define upstream_version 1.59
-
 %if %{_use_internal_dependency_generator}
 %define __noautoreq 'perl\\(DBD::Oracle\\)'
 %else
@@ -9,15 +7,15 @@
 
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	1.59
+Release:	6
 
 Summary:	Database-independent schema objects
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Summary:	Encapsulate SQL queries and rows in simple perl object
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/DBIx/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/%{upstream_name}
+Source0:	http://www.cpan.org/modules/by-module/DBIx/%{upstream_name}-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -47,7 +45,7 @@ object) and table name for the class. You can try to override just about
 every other method here, as long as you think you know what you are doing.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 find -name \*.pm | xargs chmod 644
 
 %build
@@ -79,8 +77,7 @@ make test
 * Fri Jul 17 2009 Jérôme Quelin <jquelin@mandriva.org> 1.560.0-1mdv2011.0
 + Revision: 396844
 - update to 1.56
-- using %%perl_convert_version
-- fixed license field
+- using %1.59 fixed license field
 
 * Sun May 10 2009 Guillaume Rousse <guillomovitch@mandriva.org> 1.55-1mdv2010.0
 + Revision: 373933
